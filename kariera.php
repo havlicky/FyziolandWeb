@@ -51,7 +51,7 @@ html {
     <div class="row" id="proc-si-vybrat-prave-nas">
         <div class="col-lg-6 col-lg-offset-3">
             <div class="col-md-12 text-center nadpis" style = "font-size:18pt">
-                Proč pracovat právě u nás<br>
+                Proč pracovat právě ve FL<br>
                 <div class="underline"></div>
             </div>
             <div class="col-md-12 text-center small">
