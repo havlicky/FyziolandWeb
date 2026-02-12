@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# presmerovani na https verzi
+RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,QSA,NE]
+
+# pravidlo, ze odkaz na stranku "index" bude presmerovan na "index.php"
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^rezervace/(.*)$ rezervace.php?date=$1 [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# chybova stranka
+ErrorDocument 404 /404.php

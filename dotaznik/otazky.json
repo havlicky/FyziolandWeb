@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "label": "1. Negativně reaguje na nečekané nebo hlasité zvuky, např. vysavač, štěkot, fén.",
+    "order": 100,
+    "category": "sluch"
+  },
+  {
+    "id": 2,
+    "label": "2. Před některými zvuky si zakrývá uši.",
+    "order": 101,
+    "category": "sluch"
+  },
+  {
+    "id": 3,
+    "label": "3. Má obtíže dokončit úkol při zapnutém rádiu.",
+    "order": 102,
+    "category": "sluch"
+  },
+  {
+    "id": 4,
+    "label": "4. Nechá se snadno vyrušit okolními ruchy.",
+    "order": 103,
+    "category": "sluch"
+  },
+  {
+    "id": 5,
+    "label": "5. Při práci ho/ji ruší ruchy pozadí, např. větrák, lednice.",
+    "order": 104,
+    "category": "sluch"
+  },
+  {
+    "id": 6,
+    "label": "6. Vypadá, že neslyší, co říkáte. Zdá se, jakoby Vás ignoroval/a.",
+    "order": 105,
+    "category": "sluch"
+  },
+  {
+    "id": 7,
+    "label": "7. Neodpoví, když něj/ni zavoláte jménem.",
+    "order": 106,
+    "category": "sluch"
+  },
+  {
+    "id": 8,
+    "label": "8. Vyhledává hlasité zvuky, rád/a dělá hluk.",
+    "order": 107,
+    "category": "sluch"
+  },
+  {
+    "id": 9,
+    "label": "9. Preferuje tmu/ tmavé prostředí.",
+    "order": 200,
+    "category": "zrak"
+  }
+]

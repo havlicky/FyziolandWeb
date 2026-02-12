@@ -1,0 +1,2335 @@
+body, html {
+    font-family: 'BloggerSans';
+    height: 100%;
+    
+    -webkit-font-variant-ligatures: no-common-ligatures !important;
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.message-box {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    padding: 10px;
+    z-index: 1050;
+    color: white;
+    display: none;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.message-box.alert-success {
+    background-color: rgba(0, 170, 213, 0.9);
+}
+
+.message-box.alert-danger {
+    background-color: rgba(239, 11, 68, 0.9);
+}
+
+.form-control {
+    min-height: 34px !important;
+    height: initial !important;
+}
+
+#vyrovnani-menu {
+    height: 50px;
+}
+
+.vypln {
+    height: 20px;
+}
+
+.decorated {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.decorated > a.ui-state-default {
+    background: none;
+    background-color: green !important;
+    color: white !important;
+}
+
+a.ui-state-active {
+    color: yellow !important;
+}
+
+.ui-datepicker-calendar tbody a {
+    text-align: center;
+}
+
+.ui-datepicker-calendar tbody .ui-state-default {
+    text-align: center;
+    background: none;
+    background-color: red;
+}
+
+#navbar nav {
+    background-color: white;
+    border-color: white;
+}
+
+#navbar nav #top-menu {
+    text-align: center;
+}
+
+#navbar nav #top-menu ul {
+    float: none;
+    display: inline-block;
+}
+
+#navbar nav ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    float: none;
+}
+
+#navbar nav ul li a {
+    font-weight: bold;
+    color: #4e4d43;
+    display: inline;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#navbar nav ul li:not(:last-child) a {
+    border-right: 1px solid grey;
+}
+
+#navbar nav ul li.active {
+    background: url(../img/aktivni-kruh.png) no-repeat center -12px;
+    background-size: 20px 20px;
+}
+
+#navbar nav ul li.active a {
+    font-weight: bold;
+    color: #00aad5;
+    background-color: white;
+}
+
+#navbar .navbar-toggle {
+    background-color: rgba(0, 170, 213, 0.8);
+    width: 60px;
+}
+
+#navbar .navbar-toggle .icon-bar {
+    background-color: white;
+    width: 38px;
+}
+
+#navbar .navbar-brand {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    #navbar .navbar-brand {
+        display: block;
+        padding: 0;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    #navbar .navbar-collapse {
+        background-color: rgba(0, 170, 213, 0.8);
+    }
+    
+    #navbar ul {
+        width: 100%;
+        -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+        -moz-columns: 100px 2; /* Firefox */
+        columns: 100px 2;
+    }
+    
+    #navbar nav ul li {
+        width: 100%;
+    }
+    
+    #navbar nav ul li.active {
+        background: none;
+    }
+    
+    #navbar nav ul li.active a {
+        color: grey;
+        background-color: transparent;
+    }
+    
+    #navbar nav ul li a {
+        color: white;
+        font-weight: bold;
+    }
+    
+    #navbar nav ul li:not(:last-child) a {
+        border-right: none;
+    }
+    
+    .message-box {
+        top: 230px;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
+        left: initial;
+        padding: 10px;
+        font-size: 13pt;
+    }
+}
+    
+#navbar #brand-logo {
+    height: 30px;
+}
+
+#title {
+    position: relative;
+}
+
+#title #slideshow-title {
+    visibility: hidden;
+}
+
+#title #slideshow-title .slideshow-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+#title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    
+    width: 165px;
+}
+
+#title-objednavky, #title-online {
+    margin-top: 20px;    
+    color: white;
+    font-weight: bold;
+    font-size: 16pt;
+    height: 54px;
+}
+
+#title-online {
+    margin-top: 10px;
+}
+
+#title-objednavky a, #title-online a {
+    color: white;
+    text-decoration: underline;
+}
+
+#title-objednavky>div, #title-online>div {  
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow-x: hidden;
+}
+
+#title-objednavky>div {
+    background-color: rgba(0, 170, 213, 0.8);
+    margin-top: 10px;
+}
+
+#title-online>div {
+    background-color: rgba(130, 187, 37, 0.8);
+    margin-top: 10px;
+}
+
+#title-kontakty {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#title #container-zpravy {
+    position: absolute;
+    visibility: hidden;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 767px) {
+    #title #container-zpravy {
+        margin-left: -175px;
+        width: 350px;
+    }
+}
+
+.underline {
+    width: 80px;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.underline.black {
+    background-color: black;
+}
+
+#fyzioterapie {
+    background: rgb(0,170,213) url("../img/pruhledno kruhy.png") no-repeat center center;  
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#fyzioterapie img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    -webkit-filter: brightness(100%);
+}
+
+#fyzioterapie img:hover {
+    opacity: 0.75;
+    /*-webkit-filter: brightness(70%);*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+#ergoterapie {
+    background: rgb(0,170,213) url("../img/pruhledno kruhy.png") no-repeat center center;  
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#ergoterapie img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    -webkit-filter: brightness(100%);
+}
+
+#ergoterapie img:hover {
+    opacity: 0.75;
+    /*-webkit-filter: brightness(70%);*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+#fyzioterapie2 {
+    background: #dcd8d8 url("../img/pruhledno kruhy.png") no-repeat center center;  
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+fyzioterapie2 img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    -webkit-filter: brightness(100%);
+}
+
+fyzioterapie2 img:hover {
+    opacity: 0.75;
+    /*-webkit-filter: brightness(70%);*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;   
+}
+
+#fyzioterapie2 .underline {
+    background-color: black;
+}
+
+#ergoterapieDospeli {
+    background: #888888 url("../img/pruhledno kruhy.png") no-repeat center center;  
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#ergoterapieDospeli img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    -webkit-filter: brightness(100%);
+}
+
+#ergoterapieDospeli img:hover {
+    opacity: 0.75;
+    /*-webkit-filter: brightness(70%);*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+#ergoterapieDospeli .underline {
+    background-color: white;
+}
+
+#cviceni {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+#cviceni .underline {
+    background-color: black;
+}
+
+#cviceni .green-panel {
+    background-color: rgb(130, 187, 37);
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    margin-top: 50px;
+    min-height: 225px;
+}
+
+#cviceni .green-panel:hover {
+    background-color: #a2c614;
+}
+
+#cviceni .green-panel img {
+    margin-top: -62px;
+}
+
+#cviceni .green-panel .nadpis {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#cviceni .green-panel .telo {
+    font-size: 12pt;
+}
+
+#cviceni .green-panel .arrow {
+    background: url("../img/sipka.png");
+    width: 37px;
+    height: 37px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nase-vize {
+    background: url("../img/bily_kruh.png") no-repeat center -50px; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #bcbcb8;
+    margin-top: 30px;
+}
+
+#nase-vize .underline {
+    background-color: black;
+}
+
+#proc-si-vybrat-prave-nas {         
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+#ergo-text { 
+    text-align: center;
+    font-size: 15pt;
+    font-weight: normal;    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.webp .modra {
+    background: url("../img/spoluprace-pro-sportovni-kluby.webp") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp .modra {
+    background: url("../img/spoluprace-pro-sportovni-kluby.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.webp .bubliny {
+    background: #ebebeb url("../img/pruhledno kruhy.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp .bubliny {
+    background: #ebebeb url("../img/pruhledno kruhy.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.webp .modre-bubliny {
+    background: rgb(0,170,213) url("../img/pruhledno kruhy.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+.no-webp .modre-bubliny {
+    background: rgb(0,170,213) url("../img/pruhledno kruhy.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#proc-si-vybrat-prave-nas .nadpis {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#proc-si-vybrat-prave-nas .podnadpis {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#proc-si-vybrat-prave-nas .duvod-proc-nas {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 8px;
+    background: url("../img/logo-bez-textu.png") no-repeat 10px 8px;
+    background-size: 20px 20px;
+    font-weight: normal;    
+}
+
+#proc-si-vybrat-prave-nas #slideshow-1 {
+    /*background-color: rgba(0, 171, 215, 0.3);*/
+}
+
+#proc-si-vybrat-prave-nas #slideshow-1 img {
+    display: block;
+    margin: auto;
+    padding: 10px;
+}
+
+#proc-si-vybrat-prave-nas #slideshow-1 .slick-prev:before,
+#proc-si-vybrat-prave-nas #slideshow-1 .slick-next:before {
+    color: #bcbcb8;
+}
+
+#proc-si-vybrat-prave-nas .underline {
+    background-color: black;
+}
+
+#hledate-konkretni-metodiku {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    color: white;
+}
+
+.webp #hledate-konkretni-metodiku {
+    background:  url("../img/bily_kruh.png") no-repeat center -50px, url("../img/metodika.webp") no-repeat center center;
+}
+
+.no-webp #hledate-konkretni-metodiku {
+    background:  url("../img/bily_kruh.png") no-repeat center -50px, url("../img/metodika.jpg") no-repeat center center;
+}
+
+#hledate-konkretni-metodiku .underline {
+    background-color: white;
+}
+
+#hledate-konkretni-metodiku .metodika {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 8px;
+    font-size: 14pt;
+}
+
+#hledate-konkretni-metodiku p {
+    font-weight: normal;
+    font-size: 12pt;
+}
+
+#hledate-konkretni-metodiku .metodika-1 {
+    background: url("../img/cislo_1.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-2 {
+    background: url("../img/cislo_2.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-3 {
+    background: url("../img/cislo_3.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-4 {
+    background: url("../img/cislo_4.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-5 {
+    background: url("../img/cislo_5.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-6 {
+    background: url("../img/cislo_6.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-7 {
+    background: url("../img/cislo_7.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-8 {
+    background: url("../img/cislo_8.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#hledate-konkretni-metodiku .metodika-9 {
+    background: url("../img/cislo_9.png") no-repeat 10px top;
+    background-size: 35px 35px;
+}
+
+#diagnozy { 
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+#diagnozy .nadpis {
+    font-weight: bold;
+}
+
+#diagnozy .underline {
+    background-color: black;
+}
+
+#nas-tym {
+    background:  url("../img/bily_kruh.png") no-repeat center -50px, url("../img/nas-tym.png") no-repeat center center, #82bb25;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+#nas-tym>div {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#nas-tym>div.right-border {
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#nas-tym .underline {
+    background-color: white;
+}
+
+.chci-vedet-vice {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+#nas-tym img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#nas-tym p {
+    font-weight: normal;
+    text-align: justify;
+}
+
+#nas-tym p.doktor {
+    font-weight: bold;
+    text-align: center;
+}
+
+#nas-tym p.pozice {
+    text-align: center;
+}
+
+.chci-vedet-vice-modal .modal-content {
+    background: url("../img/nas-tym.png") no-repeat center center, #82bb25;
+    color: white;
+}
+
+.chci-vedet-vice-modal .modal-content strong {
+    font-size: 13pt;
+}
+
+.chci-vedet-vice-modal img {
+    max-width: 100%;
+    max-height: 360px;
+    margin-bottom: 15px;
+}
+
+.chci-vedet-vice-modal .table-kurzy td {
+    vertical-align: top;
+}
+
+.chci-vedet-vice-modal .table-kurzy td:nth-child(1) {
+    padding-right: 8px;
+}
+
+#reference {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.webp #reference {
+    background: url("../img/reference.webp") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #reference {
+    background: url("../img/reference.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#reference .underline {
+    background-color: black;
+}
+
+#reference .reference-div {
+    text-align: justify;
+    padding-left: 130px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    min-height: 120px;
+}
+
+#reference p {
+    font-weight: normal;
+}
+
+#reference .reference-1 {
+    background: url("../img/reference_1.png") no-repeat 30px top;
+    background-size: 80px 80px;
+}
+
+#reference .reference-2 {
+    background: url("../img/reference_2.png") no-repeat 30px top; 
+    background-size: 80px 80px;
+}
+
+#reference .reference-3 {
+    background: url("../img/reference_3.png") no-repeat 30px top;
+    background-size: 80px 80px;
+}
+
+@media (max-width: 767px) {
+    #reference .reference-div {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 100px;
+    }
+    
+    #reference .reference-1 {
+        background: url("../img/reference_1.png") no-repeat center top;
+        background-size: 80px 80px;
+    }
+
+    #reference .reference-2 {
+        background: url("../img/reference_2.png") no-repeat center top; 
+        background-size: 80px 80px;
+    }
+
+    #reference .reference-3 {
+        background: url("../img/reference_3.png") no-repeat center top;
+        background-size: 80px 80px;
+    }
+}
+
+#spoluprace-pro-sportovni-kluby {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.webp #spoluprace-pro-sportovni-kluby {
+    background: url("../img/spoluprace-pro-sportovni-kluby.webp") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #spoluprace-pro-sportovni-kluby {
+    background: url("../img/spoluprace-pro-sportovni-kluby.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#spoluprace-pro-sportovni-kluby #slideshow-3 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+
+#spoluprace-pro-sportovni-kluby img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+
+#spoluprace-pro-sportovni-kluby .underline {
+    background-color: black;
+}
+
+#spoluprace-pro-sportovni-kluby .popis {
+    padding-right: 30px;
+}
+
+#spoluprace-pro-sportovni-kluby p {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+#spoluprace-pro-sportovni-kluby .chci-spolupracovat {
+    background-color: #022532;
+    color: white;
+    float: right;
+    font-size: 14pt;
+}
+
+#chci-vice-informaci {
+    background-color: #022532;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+#chci-vice-informaci img {
+    max-width: 100%;
+}
+
+#chci-vice-informaci #kontaktni-formular input {
+    background-color: #022532;
+    color: #a9cc1d;
+    border-color: #a9cc1d;
+    font-size: 14pt;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+}
+
+#chci-vice-informaci #kontaktni-formular button {
+    background-color: #a9cc1d;
+    color: #022532;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#kontakty {
+    background: url("../img/pata-pozadi.png") repeat;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#kontakty .nadpis {
+    margin-top: 20px;
+    color: #a9cc1d;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+#kontakty .nadpis img {
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+#kontakty .logo {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#kontakty .adresa {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: white;
+    font-size: 14pt;
+}
+
+#kontakty .adresa a {
+    color: white;
+    text-decoration: underline;
+}
+
+#kontakty .ikony {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#kontakty .ikony img {
+    margin-right: 10px;
+}
+
+#kontakty .odkazy {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20%;
+    text-align: left;
+    color: white;
+    font-size: 14pt;
+    padding: 0;
+}
+
+#kontakty .odkazy li {
+    margin-top: 10px;
+}
+
+#kontakty .odkazy li:hover {
+    color: #a9cc1d;
+}
+
+#kontakty .mapka {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 90%;
+}
+
+#kontakty .cara {
+    display: none;
+}
+
+#kontakty .col-md-4:not(:last-child) {
+    background: url('../img/svisla-cara.png') no-repeat right 30px;
+    min-height: 390px;
+}
+
+@media (max-width: 992px) {
+    #kontakty {
+        text-align: center;
+    }
+    
+    #kontakty .odkazy {
+        text-align: center;
+        list-style: none;
+        margin-left: auto;
+    }
+    
+    #kontakty .cara {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    #kontakty .col-md-4:not(:last-child) {
+        background: none;
+        min-height: 0;
+    }
+}
+
+.posun-nahoru {
+    background: url("../img/sipka-nahoru.png");
+    width: 37px;
+    height: 37px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+.modal-dialog .modal-content a.link {
+    color: #a9cc1d;
+}
+
+#chci-spolupracovat-modal .modal-title {
+    color: #a9cc1d;
+}
+
+#chci-spolupracovat-modal .modal-body {
+    background: url("../img/nas-tym.png") no-repeat center center, lightgrey;
+}
+
+#chci-spolupracovat-modal .btn-success {
+    background-color: rgb(130, 187, 37);
+}
+
+#chci-spolupracovat-modal .btn-success:hover {
+    background-color: #449d44;
+}
+
+#chci-spolupracovat-modal textarea {
+    resize: none;
+}
+
+.redBorder {
+    border: 1px solid red;
+}
+
+.kariera-modal .modal-header .close {
+    color: white;
+    text-shadow: none;
+}
+
+.kariera-modal .modal-content {
+    background: url("../img/pata-pozadi.png") repeat;
+    color: white;
+}
+
+.kariera-modal .modal-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.kariera-modal .modal-content .row:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.kariera-modal .modal-content .pozice {
+    font-size: 14pt;
+    font-weight: bold;
+    padding-left: 30px;
+    background: url("../img/logo-bez-textu.png") no-repeat 0px 0px;
+    background-size: 20px 20px;
+    margin-bottom: 8px;
+    color: #82bb25;
+}
+
+.kariera-modal .modal-content .nadpis {
+    font-weight: bold;
+}
+
+.faq-modal .modal-header .close {
+    color: white;
+    text-shadow: none;
+}
+
+.faq-modal .modal-content {
+    background: url("../img/pata-pozadi.png") repeat;
+    color: white;
+}
+
+.faq-modal .modal-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.faq-modal .modal-content .otazka {
+    font-size: 13pt;
+    font-weight: bold;
+    padding-left: 30px;
+    background: url("../img/logo-bez-textu.png") no-repeat 0px 0px;
+    background-size: 20px 20px;
+    margin-bottom: 8px;
+    color: #82bb25;
+}
+
+.faq-modal .modal-content .odpoved {
+    padding-left: 30px;
+}
+
+.vop-modal .modal-header .close {
+    color: white;
+    text-shadow: none;
+}
+
+.vop-modal .modal-content {
+    background: url("../img/pata-pozadi.png") repeat;
+    color: white;
+}
+
+.vop-modal .modal-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.vop-modal .nadpis {
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #82bb25;
+    background: url("../img/logo-bez-textu.png") no-repeat 0px 0px;
+    background-size: 20px 20px;
+    padding-left: 30px;
+}
+
+.vop-modal .modal-content .odpoved {
+    padding-left: 30px;
+}
+
+.doporucujeme-modal .modal-header .close {
+    color: white;
+    text-shadow: none;
+}
+
+.doporucujeme-modal .modal-content {
+    background: url("../img/pata-pozadi.png") repeat;
+    color: white;
+}
+
+.doporucujeme-modal .modal-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.doporucujeme-modal .modal-content .otazka {
+    font-size: 13pt;
+    font-weight: bold;
+    padding-left: 30px;
+    background: url("../img/logo-bez-textu.png") no-repeat 0px 0px;
+    background-size: 20px 20px;
+    margin-bottom: 8px;
+    color: #82bb25;
+}
+
+.doporucujeme-modal .modal-content .odpoved {
+    padding-left: 30px;
+}
+
+.cenik-modal .modal-content {
+    background: url("../img/nas-tym.png") no-repeat center center, #82bb25;
+    color: white;
+}
+
+.cenik-modal .modal-content #accordion {
+    margin-bottom: 0px;
+}
+
+.cenik-modal .modal-content #accordion .mezera-dole {
+    margin-bottom: 15px;
+}
+
+.cenik-modal .modal-content .cena {
+    text-align: right;
+}
+
+.cenik-modal .modal-content .panel-body {
+    color: black;
+}
+
+.cenik-modal .modal-content .nad-cenikem {
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+
+.cenik-modal .modal-content .pod-cenikem {
+    font-size: 12pt;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+/* ----------------- */
+/* skupinová cvičení */
+/* ----------------- */
+
+#skupinova-cviceni-odkaz1 {
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.webp #skupinova-cviceni-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #skupinova-cviceni-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#skupinova-cviceni-odkaz1 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#skupinova-cviceni-odkaz1 .underline {
+    background-color: white;
+}
+
+#skupinova-cviceni-odkaz2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#skupinova-cviceni-odkaz2 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#skupinova-cviceni-odkaz2 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#skupinova-cviceni-odkaz2 .text {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#skupinova-cviceni-odkaz2 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#skupinova-cviceni-odkaz3 {
+    background-color: #e1dfdd;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#skupinova-cviceni-odkaz3 .nadpis {
+    font-weight: bold;
+}
+
+#skupinova-cviceni-odkaz4 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#skupinova-cviceni-odkaz4 .nadpis {
+    font-weight: bold;
+}
+
+#stranka-404 {
+    background: rgb(0,170,213) url("../img/pruhledno kruhy.png") no-repeat center center;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#stranka-404 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#stranka-404 .underline {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*************/
+/* Rezervace */
+/*************/
+
+#hlavicka-rezervaci a {
+    color: black;
+}
+
+#rezervace-title {
+    height: 150px;
+    text-align: center;
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.webp #rezervace-title {
+    background: url(../img/rezervace-pozadi.jpg) no-repeat bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.webp .skupiny#rezervace-title {
+    background: url(../img/titulni-2.jpg) no-repeat center 72%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #rezervace-title {
+    background: url(../img/spoluprace-pro-sportovni-kluby.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#rezervace-nadpis {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+#rezervace-nadpis .underline {
+    background-color: black;
+}
+
+#rezervace-nad-tabulkou {
+    font-size: 12pt;
+    margin-bottom: 15px;
+}
+
+#rezervace-pod-tabulkou {
+    font-size: 12pt;
+    margin-bottom: 15px;
+}
+
+#rezervace-title #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#rezervace-title .underline {
+    background-color: black;
+}
+
+#rezervace-telo {
+    margin-top: 20px;
+}
+
+#rezervace-telo .notYetAllowed {
+    background-color: #ec971f;
+}
+
+#reservations {
+    background: url("../img/pruhledno kruhy.png") no-repeat center top, rgb(130, 187, 37);
+}
+
+#reservations th, #reservations tr td:first-child {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+#reservations, #reservations th, #reservations td {
+    border-color: #65921b;
+}
+
+#reservations, #reservations th, #reservations td {
+    border-color: #65921b;
+}
+
+#reservations td.success {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#reservations td.success span, #reservations td.grey span.small-device {
+    display: none;
+}
+
+#reservations td.success:hover span.large-device, #reservations td.grey span.large-device {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #reservations td.success:hover span.large-device, #reservations td.grey span.large-device {
+        display: none !important;
+    }
+    
+    #reservations td.success:hover span.small-device, #reservations td.grey span.small-device {
+        display: inline-block !important;
+        
+    }
+}
+
+#clientwlparam {
+    background: url("../img/pruhledno kruhy.png") no-repeat center top, rgb(130, 187, 37);
+}
+
+#clientwlparam th, #clientwlparam tr td:first-child {
+    background-color: rgba(255, 255, 255, 0.4);
+    
+}
+
+#clientwlparam, #clientwlparam th, #clientwlparam td {
+    border-color: #65921b;
+}
+
+#clientwlparam, #clientwlparam th, #clientwlparam td {
+    border-color: #65921b;
+}
+
+#clientwlparam td {
+    cursor: pointer;
+    background-color: #dff0d8;
+}
+
+#clientwlparam td span, #clientwlparam td.grey span.small-device {
+    display: none;
+}
+
+#clientwlparam td:hover span.large-device, #clientwlparam td.grey span.large-device {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #clientwlparam td:hover span.large-device, #clientwlparam td.grey span.large-device {
+        display: none !important;
+    }
+    
+    #clientwlparam td:hover span.small-device, #clientwlparam td.grey span.small-device {
+        display: inline-block !important;
+        
+    }
+}
+
+
+#clientslots{
+    background: url("../img/pruhledno kruhy.png") no-repeat center top, rgb(130, 187, 37);
+}
+
+#clientslots th, #clientslots tr td:first-child {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+#clientslots, #clientslots th, #clientslots td {
+    border-color: #65921b;
+}
+
+#clientslots, #clientslots th, #clientslots td {
+    border-color: #65921b;
+}
+
+#clientslots td.success {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#clientslots td.success span, #clientslots td.grey span.small-device {
+    display: none;
+}
+
+#clientslots td.success:hover span.large-device, #clientslots td.grey span.large-device {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #clientslots td.success:hover span.large-device, #clientslots td.grey span.large-device {
+        display: none !important;
+    }
+    
+    #clientslots td.success:hover span.small-device, #clientslots td.grey span.small-device {
+        display: inline-block !important;
+        
+    }
+}
+
+#waitingList{
+    background: url("../img/pruhledno kruhy.png") no-repeat center top, rgb(130, 187, 37);
+}
+
+#waitingList th, #waitingList tr td:first-child {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+#waitingList, #waitingList th, #waitingList td {
+    border-color: #65921b;
+}
+
+#waitingList, #waitingList th, #waitingList td {
+    border-color: #65921b;
+}
+
+#waitingList td.success {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#waitingList td.success span, #waitingList td.grey span.small-device {
+    display: none;
+}
+
+#waitingList td.success:hover span.large-device, #waitingList td.grey span.large-device {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #waitingList td.success:hover span.large-device, #waitingList td.grey span.large-device {
+        display: none !important;
+    }
+    
+    #waitingList td.success:hover span.small-device, #waitingList td.grey span.small-device {
+        display: inline-block !important;
+        
+    }
+}
+
+
+.rezervace-prehled-rezervaci {
+    text-align: right;
+}
+
+.rezervace-vyber-terapeuta {
+    text-align: left;
+    border-left: 1px solid black;
+}
+
+@media (max-width: 992px) {
+    .rezervace-prehled-rezervaci {
+        text-align: center;
+    }
+
+    .rezervace-vyber-terapeuta {
+        text-align: center;
+        border-left: none;
+    }
+ 
+}
+
+#tableContainer {
+    position: relative;
+}
+
+#tableLoading {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+#tableLoading table {
+    width: 100%;
+    height: 100%
+}
+
+#tableLoading table td {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+}
+
+.grey {
+    background-color: #e1dfdd;
+}
+
+.green {
+    background-color: #dff0d8;
+}
+
+#reservationsGroup {
+    background: url("../img/pruhledno kruhy.png") no-repeat center top, rgb(130, 187, 37);
+}
+
+#reservationsGroup th, #reservationsGroup tr td:first-child {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+}
+
+#reservationsGroup, #reservationsGroup th, #reservationsGroup td {
+    border-color: #65921b;
+}
+
+#reservationsGroup, #reservationsGroup th, #reservationsGroup td {
+    border-color: #65921b;
+}
+
+#reservationsGroup td.success {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#reservationsGroup td.success span, #reservationsGroup td.danger span.small-device {
+    display: none;
+}
+
+#reservationsGroup td.success:hover span.large-device, #reservationsGroup td.danger span.large-device {
+    display: inline-block !important;
+}
+
+@media (max-width: 767px) {
+    #reservationsGroup td.success:hover span.large-device, #reservationsGroup td.danger span.large-device {
+        display: none !important;
+    }
+    
+    #reservationsGroup td.success:hover span.small-device, #reservationsGroup td.danger span.small-device {
+        display: inline-block !important;
+        
+    }
+}
+
+.text-xs-center {
+    text-align: center;
+}
+
+#overMenuLink:hover {
+    text-decoration: none;
+}
+
+#rezervace-modal .modal-header {
+    /*color: #82bb25;*/
+    color: white;
+}
+
+#rezervace-modal .modal-content {
+    background: url("../img/nas-tym.png") no-repeat center center, #82bb25;
+    color: white;
+}
+
+/*
+#rezervace-modal .modal-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+*/
+
+#rezervace-modal .modal-content.skupiny .row {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#rezervace-modal .modal-content label {
+    /*color: #82bb25;*/
+    color: white;
+}
+
+#rezervace-modal textarea {
+    resize: none;
+}
+
+/***********/
+/* Dospělí */
+/***********/
+
+#dospeli-odkaz1 {
+    min-height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.webp #dospeli-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #dospeli-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#dospeli-odkaz1 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 165px;
+}
+
+#dospeli-odkaz1 .underline {
+    background-color: white;
+}
+
+#dospeli-odkaz2 {
+    text-align: left;
+    margin-top: 5px;
+}
+
+#dospeli-odkaz2 .nadpis {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 8px;
+    background: url("../img/logo-bez-textu.png") no-repeat 10px 8px;
+    background-size: 20px 20px;    
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+#dospeli-odkaz2 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#dospeli-odkaz2 .text {
+    font-style: italic;
+    margin-top: 10px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#dospeli-odkaz2 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#dospeli-odkaz3 {
+    text-align: left;
+    margin-top: 5px;
+}
+
+#dospeli-odkaz3 .nadpis {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 8px;
+    background: url("../img/logo-bez-textu.png") no-repeat 10px 8px;
+    background-size: 20px 20px;
+    font-weight: bold;
+    font-size: 14pt;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#dospeli-odkaz3 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#dospeli-odkaz3 .text {
+    font-style: italic;
+    margin-top: 10px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#dospeli-odkaz3 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+
+@media (max-width: 1400px) {
+    #dospeli-hlavni-nadpis>div {
+        padding-top: 20px;
+    }
+}
+
+/********/
+/* Děti */
+/********/
+
+#deti-odkaz1 {
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.webp #deti-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #deti-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#deti-odkaz1 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#deti-odkaz1 .underline {
+    background-color: white;
+}
+
+#deti-odkaz2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#deti-odkaz2 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#deti-odkaz2 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#deti-odkaz2 .text {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#deti-odkaz2 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#deti-odkaz3 {
+    background-color: #e1dfdd;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#deti-odkaz3 .nadpis {
+    font-weight: bold;
+}
+
+#deti-odkaz4 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#deti-odkaz4 .nadpis {
+    font-weight: bold;
+}
+
+/*************/
+/* Sportovci */
+/*************/
+
+#sportovci-odkaz1 {
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.webp #sportovci-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #sportovci-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sportovci-odkaz1 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#sportovci-odkaz1 .underline {
+    background-color: white;
+}
+
+#sportovci-odkaz2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#sportovci-odkaz2 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#sportovci-odkaz2 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#sportovci-odkaz2 .text {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#sportovci-odkaz2 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#sportovci-odkaz3 {
+    background-color: #e1dfdd;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#sportovci-odkaz3 .nadpis {
+    font-weight: bold;
+}
+
+#sportovci-odkaz4 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#sportovci-odkaz4 .nadpis {
+    font-weight: bold;
+}
+
+/*********************************/
+/* Masáže a alternanivní terapie */
+/*********************************/
+
+#masazeAterapie-odkaz1 {
+    min-height: 150px;
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.webp #masazeAterapie-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-webp #masazeAterapie-odkaz1 {
+    background: url(../img/skupinova-cviceni-pozadi.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#masazeAterapie-odkaz1 #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+#masazeAterapie-odkaz1 .underline {
+    background-color: white;
+}
+
+#masazeAterapie-odkaz2 {
+    text-align: left;
+    margin-top: 15px;
+}
+
+#masazeAterapie-odkaz2 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#masazeAterapie-odkaz2 .podnadpis {
+    font-size: 14pt;
+    border-bottom: 1px dotted black;
+    padding-bottom: 8px;
+    font-style: italic;
+}
+
+#masazeAterapie-odkaz2 .text {
+    font-style: italic;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#masazeAterapie-odkaz2 img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+#masazeAterapie-odkaz3 {
+    /*background-color: #e1dfdd;*/
+    /*background:  url("../img/nas-tym.png") no-repeat center center, #82bb25;*/
+    background: url("../img/nas-tym.png") no-repeat center center, lightgrey;
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+
+#masazeAterapie-odkaz3 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+    font-style: normal;
+}
+
+#masazeAterapie-odkaz4 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+
+#masazeAterapie-odkaz4 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+    font-style: normal;
+}
+
+#masazeAterapie-odkaz5 {
+    text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+}
+
+#masazeAterapie-odkaz5 .nadpis {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+    font-style: normal;
+}
+
+@media (max-width: 1400px) {
+    #masazeAterapie-hlavni-nadpis>div {
+        padding-top: 20px;
+    }
+}
+
+/************************************/
+/* Přehled rezervací v administraci */
+/************************************/
+
+/*
+@media (max-width: 767px) {
+    #prehled-rezervaci tr th:nth-child(7), #prehled-rezervaci tr td:nth-child(7) {
+        display: none;
+    }
+}
+*/
+
+#administrace-rezervaci a {
+    color: #82bb25;
+}
+
+#administrace-rezervaci #rezervace-navigace {
+    border-bottom: 1px solid #82bb25;
+    margin-bottom: 20px;
+}
+
+#administrace-rezervaci #rezervace-modal #search + .select2-container {
+    width: 100% !important;
+}
+
+#administrace-rezervaci #rezervace-modal .select2-selection {
+    height: 34px;
+    padding-top: 3px;
+    padding-left: 8px;
+}
+
+#administrace-rezervaci #rezervace-modal .select2-selection__arrow {
+    margin-top: 3px;
+}
+
+#administrace-rezervaci th, #administrace-rezervaci td {
+    vertical-align: middle;
+}
+
+td[data-type='slot-toggle'] {
+    cursor: pointer;
+}
+
+.skupinova-cviceni-kalendar table {
+    table-layout: fixed !important;
+}
+.skupinova-cviceni-kalendar table td {
+    padding: 0 !important;
+    margin: 0;
+}
+.skupinova-cviceni-kalendar table th {
+    text-align: center;
+    vertical-align: middle;
+}
+.skupinova-cviceni-kalendar .trTitle {
+    padding: 5px !important;
+    text-align: center;
+    vertical-align: middle;
+}
+.skupinova-cviceni-kalendar .groupedEmpty {
+    background-image: linear-gradient(135deg, #ffffff 25%, #ebebeb 25%, #ebebeb 50%, #ffffff 50%, #ffffff 75%, #ebebeb 75%, #ebebeb 100%);
+    background-size: 42.43px 42.43px;
+}
+.skupinova-cviceni-kalendar .tableCell {
+    height: 40px;
+}
+
+.skupinova-cviceni-kalendar .item {
+    position: absolute;
+    background-color: #82bb25;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    display: none;
+}
+
+.skupinova-cviceni-kalendar .item:link, 
+.skupinova-cviceni-kalendar .item:visited, 
+.skupinova-cviceni-kalendar .item:hover, 
+.skupinova-cviceni-kalendar .item:active {
+    color: white;
+    text-decoration: none;
+}
+
+.skupinova-cviceni-kalendar .item.passed {
+    cursor: default;
+    background-color: #aaaaaa;
+}
+
+.skupinova-cviceni-kalendar .item span[data-mark='loggedIn'] {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+.skupinova-cviceni-kalendar .item .item-title {
+     font-weight: bold; 
+     font-size: 11pt;
+}
+
+@media (max-width: 767px) {
+    .skupinova-cviceni-kalendar .item, .skupinova-cviceni-kalendar .item .item-title {
+        font-weight: bold; 
+        font-size: 8pt;
+    }
+}
+
+.skupinove-cviceni-tooltip {
+    background: url("../img/nas-tym.png") no-repeat center center, lightgrey !important;
+}
+
+#stranka-login {
+    background: url(../img/titulni-2.jpg) no-repeat center 72%;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: center;
+    height: 150px;
+}
+
+#stranka-login #title-logo img {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    
+    width: 165px;
+}
+
+form[role="login"], form[role="register"] {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: white;
+    background: #82bb25 url("../img/pruhledno kruhy.png") no-repeat center center;
+    padding: 26px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+form[role="login"] a, form[role="register"] a {
+    color: white;
+    text-decoration: underline;
+}
+
+
+form[role="login"] a:hover, form[role="register"] a:hover {
+    color: black;
+}
+
+.loggedBar {
+    position: absolute;
+    background-color: rgba(0, 170, 213, 0.8);
+    font-size: 14pt;
+    color: white;
+    top: 0px;
+    right: 18px;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .loggedBar {
+        position: relative;
+        top: 0px;
+        right: 0px;
+        margin-bottom: 15px;
+        padding: 10px;
+        z-index: 0;
+    }
+}
+
+.loggedBar a {
+    color: white;
+    text-decoration: underline;
+}
+
+.loggedBar a:hover {
+    color: black;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

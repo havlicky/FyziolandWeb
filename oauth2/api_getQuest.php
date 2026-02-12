@@ -1,0 +1,39 @@
+<?php
+
+// include our OAuth2 Server object
+require_once __DIR__.'/server.php';
+
+// Handle a request to a resource and authenticate the access token
+if (!$server->verifyResourceRequest(OAuth2\Request::createFromGlobals())) {
+    $server->getResponse()->send();
+    die;
+}
+
+require_once "../php/class.settings.php";
+
+try {
+    $dsn = "mysql:dbname=" . Settings::$dbName . ";host=" . Settings::$dbServer . ";charset=utf8";
+    $user = Settings::$dbLogin;
+    $password = Settings::$dbPassword;
+    
+    $dbh = new PDO($dsn, $user, $password);
+} catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
+    die();
+}
+
+
+$query = "  SELECT                
+                q.id,
+                q.label,
+                q.order,
+                q.category
+            FROM questions q 
+            
+            WHERE
+                q.active = 1";
+$stmt = $dbh->prepare($query);
+$stmt->execute();
+$results = $stmt->fetchAll(PDO::FETCH_OBJ);
+    
+    echo json_encode($results);
